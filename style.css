@@ -1,0 +1,93 @@
+:root {
+  --bgg: #1c422d00;
+  --color2: #d9cdad;
+  --color3: #79212f;
+  --color4: #f7db8d;
+}
+
+body {
+  background-color: rgb(120, 111, 111);
+  display: flex;
+  text-align: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+h2 {
+  font-family: "Bangers", system-ui;
+  letter-spacing: 15px;
+  word-spacing: 50px;
+  font-size: 3em;
+  text-align: center;
+  color: var(--color3);
+}
+
+#container {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  margin-top: 100px;
+  width: 100%;
+  flex-wrap: wrap;
+  background-color: #462e56;
+}
+
+#scissor {
+  background-image: url(./img/nozyce.webp);
+  background-size: 12rem;
+  opacity: 0.9;
+}
+
+#paper {
+  background-image: url(./img/papier.webp);
+  background-size: 12rem;
+  opacity: 0.9;
+}
+
+#rock {
+  background-image: url(./img/kamien.webp);
+  background-size: 12rem;
+  opacity: 0.9;
+}
+
+.game {
+  border-radius: 100px;
+  height: 200px;
+  width: 200px;
+  position: relative;
+}
+
+.game::after {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  background: red;
+  z-index: 1;
+}
+.game:hover {
+  transform: rotate(720deg);
+  box-shadow: inset 0px 0px 81px 7px rgba(43, 132, 91, 1);
+  transition: all 500ms ease-in-out;
+  cursor: pointer;
+}
+.game:active {
+  transition: none;
+  box-shadow: none;
+  opacity: 0.5;
+}
+
+input[type="button"] {
+  margin-top: 50px;
+  width: 150px;
+  height: 35px;
+  float: left;
+}
+
+span {
+  color: var(--color3);
+  font-size: 36px;
+  float: right;
+  margin-top: 45px;
+  margin-right: 15px;
+  font-weight: bold;
+}

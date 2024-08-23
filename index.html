@@ -16,28 +16,47 @@
       name="description"
       content="Zagraj w kultową gre kamień, papier, nożyce"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bangers&family=Jersey+10+Charted&family=Permanent+Marker&family=Rye&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
-      <h2>Rock Paper Scissors</h2>
+      <div class="title"><h1>Rock Paper Scissors</h1></div>
     </header>
-
     <main>
-      <div id="container">
-        <div class="game" id="scissor"></div>
-        <div class="game" id="paper"></div>
-        <div class="game" id="rock"></div>
+      <div class="container">
+        <div class="rock"></div>
+
+        <div class="paper"></div>
+        <div class="scissor"></div>
       </div>
     </main>
-
     <nav>
-      <input type="button" value="Graj od nowa" />
-      <span id="userInfo">userInfo</span>
-      <span id="cpuInfo">cpuInfo</span>
+      <div id="cpu">
+        CPU:
+        <span id="cpuInfo"></span>
+      </div>
+      <div id="user">
+        USER:
+        <span id="userInfo"></span>
+      </div>
+      <div id="result">
+        Wynik:
+        <span>result</span>
+      </div>
+
+      <input type="button" value="Restart Gry" />
+      <div class="points">
+        Puknty:
+        <span class="#pkt"></span>
+      </div>
     </nav>
 
-    <span id="result">result</span>
     <script src="script.js"></script>
   </body>
 </html>

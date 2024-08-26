@@ -6,6 +6,8 @@ let cpuInfo = document.getElementById("cpuInfo");
 let result = document.getElementById("result");
 let pts = document.querySelector(".pkt");
 
+let btn = document.querySelector(".btn");
+
 let points = 0;
 let win = new Audio("/play/win.wav");
 let lose = new Audio("/play/lose.wav");
@@ -62,4 +64,15 @@ function whoWin(userChoice) {
     pts.innerHTML = points;
     lose.play();
   }
+  if (pts < 0) {
+    pts.style.color = "red";
+  }
 }
+btn.addEventListener("click", () => {
+  result.innerHTML = "";
+  points = 0;
+  pts.innerHTML = points;
+  pts.style.color = "";
+  cpuInfo.innerHTML = "";
+  userInfo.innerHTML = "";
+});

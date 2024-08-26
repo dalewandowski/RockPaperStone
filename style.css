@@ -2,8 +2,10 @@ body {
   margin: 0;
   background: url("https://images.pexels.com/photos/7233177/pexels-photo-7233177.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
   background-size: cover;
+
   font-size: 30px;
-  font-family: "Permanent Marker", cursive;
+  font-family: "Permanent Marker";
+  height: 100vh;
 }
 
 .title {
@@ -28,13 +30,14 @@ h1 {
   align-items: center;
   justify-content: space-around;
   background: rgb(28, 26, 26);
-  max-width: 70%;
+  max-width: 80%;
   min-height: 400px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 25px;
   opacity: 0.8;
   box-shadow: -1px 7px 36px 1px rgb(10, 10, 10);
+  position: relative;
 }
 
 .rock {
@@ -72,26 +75,56 @@ h1 {
 
 #cpu {
   font-size: 2rem;
-  margin-left: 15%;
+  margin-left: 13%;
   margin-top: 10px;
   float: left;
   padding: 10px;
 }
 #user {
   font-size: 2rem;
-  margin-right: 15%;
+  margin-right: 13%;
   margin-top: 10px;
   float: right;
   padding: 10px;
 }
 #result {
-  font-size: 3rem;
+  font-size: 2.5rem;
   clear: both;
   text-align: center;
   padding: 10;
+  min-height: 65px;
 }
 
-@media screen and (max-width: 700px) {
+input[type="button"] {
+  float: right;
+  padding: 10px;
+  height: 6vh;
+  width: 150px;
+  margin-right: 10%;
+  border: none;
+  background-color: #ffe4c4;
+  font-family: "Permanent Marker";
+  font-size: 1.2rem;
+  opacity: 0.7;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+input[type="button"]:hover {
+  opacity: 1;
+  transition: 100ms ease-in-out;
+  cursor: pointer;
+}
+
+input[type="button"]:active {
+  background-color: #e1c8aa;
+}
+.points {
+  margin-left: 10%;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 900px) {
   .container {
     flex-direction: column;
   }
@@ -112,6 +145,12 @@ h1 {
     transition: transform 200ms ease-in-out;
   }
 }
+@media screen and (max-width: 360px) {
+  .points {
+    font-size: 1.3rem;
+  }
+}
+
 @keyframes rotate {
   0% {
     transform: rotate(0deg);

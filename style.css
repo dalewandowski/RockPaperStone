@@ -122,6 +122,7 @@ input[type="button"]:active {
 .points {
   margin-left: 10%;
   margin-top: 20px;
+  font-size: 2rem;
 }
 
 @media screen and (max-width: 900px) {
@@ -145,9 +146,9 @@ input[type="button"]:active {
     transition: transform 200ms ease-in-out;
   }
 }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 400px) {
   .points {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
 }
 

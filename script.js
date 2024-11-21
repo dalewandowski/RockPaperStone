@@ -9,8 +9,8 @@ let pts = document.querySelector(".pkt");
 let btn = document.querySelector(".btn");
 
 let points = 0;
-let win = new Audio("/play/win.wav");
-let lose = new Audio("/play/lose.wav");
+let win = new Audio("./play/win.wav");
+let lose = new Audio("./play/lose.wav");
 
 scissors.addEventListener("click", () => {
   whoWin("nożyce".toUpperCase());
